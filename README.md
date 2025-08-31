@@ -1,3 +1,3 @@
 # sdg_Portfolio
 
-asdasd
+서동군은 포트폴리오
