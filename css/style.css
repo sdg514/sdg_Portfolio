@@ -1,0 +1,193 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Dongle&family=Funnel+Display:wght@300..800&family=Libertinus+Keyboard&family=Nanum+Myeongjo&family=Song+Myung&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Song Myung", "Noto Sans KR", sans-serif;
+  color: #EFEFEF;
+}
+
+.inner {
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 8rem;
+  z-index: 100;
+  font-size: 2.4rem;
+}
+header .inner {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .inner h1 a {
+  display: inline-block;
+  background: url(../img/home.png) no-repeat;
+  width: 5rem;
+  height: 5rem;
+  background-size: cover;
+}
+header .inner h1 a:hover {
+  display: inline-block;
+  background: url(../img/home-hover.png) no-repeat;
+  width: 5rem;
+  height: 5rem;
+  background-size: cover;
+}
+header .inner .nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5rem;
+}
+header .inner .nav ul a {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 3rem;
+  color: #EFEFEF;
+  transition: all 0.5s;
+}
+header .inner .nav ul a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.6rem;
+  width: 0%;
+  border-bottom: 2px solid #00b3ff;
+}
+header .inner .nav ul a:hover {
+  color: #00b3ff;
+}
+header .inner .nav ul a:hover::before {
+  width: 100%;
+  transition: all 0.5s;
+}
+
+.visual {
+  width: 100%;
+  height: 100vh;
+}
+.visual .visual-bg {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: url(../img/bg.jpeg) center center no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  background-attachment: fixed;
+}
+.visual .visual-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0; /* top, right, bottom, left: 0 */
+  background: rgba(0, 0, 0, 0.9); /* 어둡게 */
+}
+.visual .swiper {
+  width: 100%;
+  height: 100%;
+}
+.visual .swiper .swiper-slide {
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s;
+}
+.visual .swiper .swiper-slide p {
+  font-size: 6rem;
+  text-align: center;
+  width: 100%;
+  line-height: 1.6;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.visual .swiper .swiper-slide p strong {
+  font-weight: 700;
+  font-size: 8rem;
+}
+
+#about {
+  height: 100vh;
+}
+#about div {
+  font-size: 10rem;
+  color: #000;
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="서동군,웹퍼블리셔,포트폴리오,html,css,웹표준,접근성,JavaScript,">
+    <meta name="keywords" content="서동군,웹퍼블리셔,포트폴리오,웹퍼블리셔 포트폴리오,html,css,웹표준,접근성,JavaScript">
+    <meta name="author" content="서동군">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="robots" content="index, follow"> <!-- 검색엔진 색인 허용 -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon"> <!-- 즐겨찾기 아이콘 -->
+
+    <title>웹퍼블리셔 포트폴리오 - 서동군</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- 파비콘 -->
+    <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="/favicon/site.webmanifest" />
+    
+
+    <!-- AOS 라이브러리 -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"> 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <!-- 헤더 -->
+    <header class="header">
+        <div class="inner">
+            <h1><a href="/" title="서동군의 포트폴리오"><span class="hidden">home</span></a></h1>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 메인 -->
+    <main>
+        <section class="visual">
+            <div class="visual-bg"></div>
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <p>안녕하세요 제 이름은<br/> <strong>서동군</strong>입니다.</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>저는 <strong>웹 퍼블리셔</strong>입니다.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="inner">
+                <h2 data-aos="fade-up">About me</h2>
+
+                <div></div>
+            </div>
+        </section>
+
+        <section id="skills">
+
+        </section>
+
+        <section id="contact">
+
+        </section>
+    </main>
+
+    <!-- 푸터 -->
+    <footer class="footer">
+        <p>&copy; 2025 서동군. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            fadeEffect: { crossFade: true },
+            effect: "fade",
+            loop: true,
+            allowTouchMove: false,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+        });
+
+        AOS.init(); 
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,161 @@
+@charset "UTF-8";
+
+@import "reset.scss";
+@import url('https://fonts.googleapis.com/css2?family=Dongle&family=Funnel+Display:wght@300..800&family=Libertinus+Keyboard&family=Nanum+Myeongjo&family=Song+Myung&display=swap');
+
+// #EFEFEF
+html {
+     font-size: 62.5%;
+}
+
+body{
+    font-family: 'Song Myung', 'Noto Sans KR', sans-serif;
+    color: #EFEFEF;
+}
+
+.inner{
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+.hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+// header
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 8rem;
+    z-index: 100;
+    font-size: 2.4rem;
+
+    .inner{
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h1{
+            a{
+                display: inline-block;
+                background: url(../img/home.png) no-repeat;
+                width: 5rem;
+                height: 5rem;
+                background-size: cover;
+
+                &:hover{
+                    display: inline-block;
+                    background: url(../img/home-hover.png) no-repeat;
+                    width: 5rem;
+                    height: 5rem;
+                    background-size: cover;
+                }
+            }
+        }
+
+        .nav{
+            ul{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 5rem;
+
+                a{
+                    position: relative;
+                    display: inline-block;
+                    text-decoration: none;
+                    font-size: 3rem;
+                    color: #EFEFEF;
+                    transition: all 0.5s;
+
+                    &::before{
+                        content: '';
+                        position: absolute;
+                        left: 0; bottom: -0.6rem;
+                        width: 0%;
+                        border-bottom: 2px solid #00b3ff;
+                    }
+
+                    &:hover{
+                        color: #00b3ff;
+                    }
+
+                    &:hover::before{
+                        width: 100%;
+                        transition: all 0.5s;
+                    }
+                }
+            }
+        }
+    }
+}
+// main
+.visual{
+    width: 100%;
+    height: 100vh;
+
+    .visual-bg{
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: url(../img/bg.jpeg) center center no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        background-attachment: fixed;
+
+        &::before{
+            content: "";
+            position: absolute;
+            inset: 0; /* top, right, bottom, left: 0 */
+            background: rgba(0, 0, 0, 0.9); /* 어둡게 */
+        }
+    }
+
+    .swiper {
+        width: 100%;
+        height: 100%;
+
+        .swiper-slide {
+            width: 100%;
+            height: 100%;
+            transition: all 0.5s;
+
+            p{
+                font-size: 6rem;
+                text-align: center;
+                width: 100%;
+                line-height: 1.6;
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+
+                strong{
+                    font-weight: 700;
+                    font-size: 8rem;
+                }
+            }
+        }
+    }
+}
+
+#about{
+    height: 100vh;
+    div{
+        font-size: 10rem;
+        color: #000;
+    }
+}
+
+// footer
