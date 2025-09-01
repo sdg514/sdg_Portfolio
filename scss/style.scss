@@ -515,6 +515,18 @@ main {
         }
     }
 
+
+    // #about .about-me > div:nth-child(2)
+
+    #about{
+        .about-me{
+            >div:nth-child(2){
+                margin-top: 2rem;
+                padding-left: 0;
+            }
+        }
+    }
+
     // skill
     #skills {
         ul {

@@ -738,6 +738,10 @@ main .section h2 strong {
   #header .inner .open {
     display: flex;
   }
+  #about .about-me > div:nth-child(2) {
+    margin-top: 2rem;
+    padding-left: 0;
+  }
   #skills ul li {
     flex-wrap: wrap;
   }
