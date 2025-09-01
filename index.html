@@ -9,6 +9,13 @@
     <meta name="author" content="서동군">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
+
+    <meta property="og:title" content="서동군 포트폴리오">
+    <meta property="og:description" content="서동군의 포트폴리오 사이트입니다">
+    <!-- <meta property="og:image" content="https://example.com/og-image.jpg">
+    <meta property="og:url" content="https://example.com/page.html"> -->
+    <meta property="og:type" content="website">
+
     <meta name="robots" content="index, follow"> <!-- 검색엔진 색인 허용 -->
     <link rel="icon" href="favicon.ico" type="image/x-icon"> <!-- 즐겨찾기 아이콘 -->
 
@@ -22,11 +29,12 @@
     <link rel="shortcut icon" href="/favicon/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
     <link rel="manifest" href="/favicon/site.webmanifest" />
-    
+
 
     <!-- AOS 라이브러리 -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"> 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -34,10 +42,12 @@
 
 <body>
     <!-- 헤더 -->
-    <header class="header">
+    <header id="header">
         <div class="inner">
             <h1><a href="/" title="서동군의 포트폴리오"><span class="hidden">home</span></a></h1>
-            <nav class="nav">
+
+            <!-- pc 메뉴 -->
+            <nav class="nav-pc">
                 <ul>
                     <li><a href="#about">About Me</a></li>
                     <li><a href="#projects">Projects</a></li>
@@ -45,68 +55,193 @@
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
+
+            <!-- 모바일 햄버거 버튼 -->
+            <button class="nav-toggle" aria-label="메뉴 열기">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <!-- 모바일 메뉴 -->
+            <nav class="nav-mobile" data-aos="fade-right">
+                <div class="inner">
+                    <button class="nav-close" aria-label="메뉴 닫기">&times;</button>
+                    <ul>
+                        <li><a href="#about">About Me</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
         </div>
     </header>
 
     <!-- 메인 -->
     <main>
-        <section class="visual">
+        <section id="visual" class="section">
             <div class="visual-bg"></div>
             <!-- Swiper -->
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <p>안녕하세요 제 이름은<br/> <strong>서동군</strong>입니다.</p>
+                        <p>안녕하세요 <br /> <strong>서동군</strong>입니다.</p>
                     </div>
                     <div class="swiper-slide">
-                        <p>저는 <strong>웹 퍼블리셔</strong>입니다.</p>
+                        <p>저는<br /> <strong>웹 퍼블리셔</strong>입니다.</p>
                     </div>
                 </div>
-                
             </div>
         </section>
 
-        <section id="about">
+        <section id="about" class="section">
             <div class="inner">
-                <h2 data-aos="fade-up">About me</h2>
+                <h2 data-aos="fade-up"><strong>About me</strong><br />저를 소개할께요</h2>
+                <div class="about-description">
+                    <p data-aos="fade-up">안녕하세요. 웹 퍼블리셔 서동군입니다.</p>
+                    <p data-aos="fade-up">4년 e-book 퍼블리싱을 담당하며 교과서(과학, 사회, 영어 등) 화면 구성을 제작했습니다.<br /> HTML과 CSS를 중심으로
+                        빠르고 정확한 퍼블리싱을 수행했으며, 디자이너와 개발자, 교과서 담당자와의 원활한 협업 경험을 갖고 있습니다.<br /> 저는 웹표준과 웹접근성을 준수한 마크업에 강점이
+                        있으며, 최근에는 JavaScript를 활용한 UI 기능 구현에도 역량을 넓히고 있습니다.<br /> 앞으로도 사용자 친화적인 웹 경험을 제공하는 퍼블리셔로 성장하고
+                        싶습니다.</p>
+                </div>
+                <div class="about-me" data-aos="fade-up">
+                    <div data-aos="fade-up">
+                        <img src="./img/me.jpg" alt="서동군의 사진" />
+                    </div>
+                    <div>
 
-                <div></div>
+                        <dl>
+                            <dt data-aos="fade-up">이름</dt>
+                            <dd data-aos="fade-up">서동군</dd>
+                            <dt data-aos="fade-up">생일</dt>
+                            <dd data-aos="fade-up">1996. 5 .14</dd>
+                            <dt data-aos="fade-up">주소</dt>
+                            <dd data-aos="fade-up">서울시 구로구 개봉동</dd>
+                            <dt data-aos="fade-up">E-Mail</dt>
+                            <dd data-aos="fade-up">ehdrns96@naver.com</dd>
+                            <dt data-aos="fade-up">전화번호</dt>
+                            <dd data-aos="fade-up">010-2885-5317 </dd>
+                            <dt data-aos="fade-up">GITHUB</dt>
+                            <dd data-aos="fade-up"><a href="https://github.com/sdg514"
+                                    target="_blank">https://github.com/sdg514</a></dd>
+                            <dt data-aos="fade-up">교육</dt>
+                            <dd data-aos="fade-up">20.05.25~20.11.02 그린컴퓨터아트학원 디지털디자인 웹퍼블리셔 수료</dd>
+                            <dt data-aos="fade-up">경력</dt>
+                            <dd data-aos="fade-up">21.04.01~25.07.31 (주)아이북스 웹퍼블리셔 개발2팀 주임 근무</dd>
+                        </dl>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section id="skills">
+        <section id="projects" class="section">
+            <div class="inner">
+                <h2 data-aos="fade-up"><strong>Projects</strong><br />프로젝트</h2>
+                <div class="project-list" data-aos="fade-up">
+                    <article class="project-card" data-aos="fade-up">
+                        <img src="./img/logitech.svg" alt="로지텍 G 리뉴얼 프로젝트" data-aos="fade-up">
+                        <h3 data-aos="fade-up">Logitech G 리뉴얼</h3>
+                        <p data-aos="fade-up">HTML, CSS, JS를 활용하여<br /> 로지텍 G 홈페이지를 리뉴얼</p>
+                        <div class="links" data-aos="fade-up">
+                            <a href="https://logitech-sdg.netlify.app/" target="_blank">Demo 보기</a>
+                            <a href="https://github.com/sdg514/Logitech" target="_blank">GitHub 코드</a>
+                        </div>
+                    </article>
 
+                    <article class="project-card" data-aos="fade-up">
+                        <img src="./img/천재 진로와직업.jpg" alt="교과서 e-book 프로젝트" data-aos="fade-up">
+                        <h3 data-aos="fade-up">천재 진로와 직업 e-book 퍼블리싱 샘플</h3>
+                        <p data-aos="fade-up">천재 고등 진로와 직업 전자책<br /> 퍼블리싱 작업</p>
+                        <div class="links" data-aos="fade-up">
+                            <a href="#" target="_blank">GitHub 코드</a>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-aos="fade-up">
+                        <img src="./img/사회-3-1-교과서.jpg" alt="교과서 e-book 프로젝트" data-aos="fade-up">
+                        <h3 data-aos="fade-up">YBM 사회 e-book 퍼블리싱 샘플</h3>
+                        <p data-aos="fade-up">YBM 사회 3-1 교과서 전자책<br /> 퍼블리싱 작업</p>
+                        <div class="links" data-aos="fade-up">
+                            <a href="#" target="_blank">GitHub 코드</a>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-aos="fade-up">
+                        <img src="./img/교학사 초등 체육.jpg" alt="교과서 e-book 프로젝트" data-aos="fade-up">
+                        <h3 data-aos="fade-up">교학사 체육 e-book 퍼블리싱 샘플</h3>
+                        <p data-aos="fade-up">교학사 초등 체육 교과서 전자책<br /> 퍼블리싱 작업</p>
+                        <div class="links" data-aos="fade-up">
+                            <a href="#" target="_blank">GitHub 코드</a>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-aos="fade-up">
+                        <img src="./img/초등 미술 3학년.jpg" alt="교과서 e-book 프로젝트" data-aos="fade-up">
+                        <h3 data-aos="fade-up">초등 미술 e-book 퍼블리싱 샘플</h3>
+                        <p data-aos="fade-up">초등 3학년 미술 교과서 전자책<br /> 퍼블리싱 작업</p>
+                        <div class="links" data-aos="fade-up">
+                            <a href="#" target="_blank">GitHub 코드</a>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-aos="fade-up">
+                        <img src="./img/술게임 게임.jpg" alt="술게임" data-aos="fade-up">
+                        <h3 data-aos="fade-up">JavaScript 이용한 술게임</h3>
+                        <p data-aos="fade-up">JavaScript를 이용하여<br /> 숫자 맞추기 술게임 구현</p>
+                        <div class="links" data-aos="fade-up">
+                            <a href="https://number-game514.netlify.app/" target="_blank">Demo 보기</a>
+                            <a href="https://github.com/sdg514/number-guess-game" target="_blank">GitHub 코드</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
         </section>
 
-        <section id="contact">
+        <section id="skills" class="section">
+            <div class="inner">
+                <h2 data-aos="fade-up"><strong>skills</strong><br />나의 스킬들</h2>
+                <ul data-aos="fade-up">
+                    <li data-aos="fade-up"><img src="./img/html.png" alt="html" /> 시맨틱 마크업과 웹표준·접근성을 준수하며, 다수의 e-book
+                        프로젝트에서 구조화된 HTML을 제작한 경험이 있습니다.</li>
+                    <li data-aos="fade-up"><img src="./img/css.png" alt="css" /> 반응형 레이아웃(Flex, Grid)과 SCSS 변수를 활용하여
+                        유지보수가 용이한 스타일을 작성합니다.</li>
+                    <li data-aos="fade-up"><img src="./img/js.png" alt="js" /> 탭, 모달, 슬라이드 등 다양한 UI 기능을 구현하며 오픈 소스를 이용하여
+                        웹을 쉽게 만들 수 있습니다.</li>
+                    <li data-aos="fade-up"><img src="./img/photoshop.png" alt="photoshop" /> 디자인 시안을 이해하고 수정할 수 있으며, 웹용
+                        이미지 최적화와 UI 요소 편집 경험을 보유하고 있습니다.</li>
+                    <li data-aos="fade-up"><img src="./img/git.png" alt="git" /> 버전 관리를 통해 협업을 수행하고, Netlify 등으로 프로젝트를
+                        배포한 경험이 있습니다.</li>
+                </ul>
+            </div>
+        </section>
 
+        <section id="contact" class="section">
+            <div class="inner">
+                <h2 data-aos="fade-up"><strong>Contact Me</strong><br /> 아래 정보로 연락주세요</h2>
+                <ul>
+                    <li class="phone" data-aos="fade-up">전화번호 <br />010-2885-5317</li>
+                    <li class="email" data-aos="fade-up">이메일 <br /> ehdrns96@naver.com</li>
+                    <li class="address" data-aos="fade-up">주소 <br /> 서울시 구로구 개봉2동</li>
+                </ul>
+            </div>
         </section>
     </main>
 
     <!-- 푸터 -->
-    <footer class="footer">
-        <p>&copy; 2025 서동군. All Rights Reserved.</p>
+    <footer id="footer">
+        <div class="inner">
+            <p>&copy; 2025 서동군. All Rights Reserved.</p>
+        </div>
     </footer>
+
+    <button id="onTop" title="위로 가기"></button>
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    
-    <!-- Initialize Swiper -->
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-            spaceBetween: 30,
-            fadeEffect: { crossFade: true },
-            effect: "fade",
-            loop: true,
-            allowTouchMove: false,
-            autoplay: {
-                delay: 5000,
-                disableOnInteraction: false,
-            },
-        });
 
-        AOS.init(); 
-    </script>
+    <!-- index.js -->
+    <script src="./index.js"></script>
 </body>
 
 </html>
