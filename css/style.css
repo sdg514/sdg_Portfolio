@@ -364,6 +364,10 @@ body {
   border: 0;
 }
 
+.m-br {
+  display: none;
+}
+
 header {
   position: absolute;
   top: 0;
@@ -644,6 +648,7 @@ main .section h2 strong {
 }
 
 #onTop {
+  display: none;
   position: fixed;
   right: 4rem;
   bottom: 4rem;
@@ -677,6 +682,9 @@ main .section h2 strong {
 @media (max-width: 480px) {
   html {
     font-size: 50%;
+  }
+  .m-br {
+    display: block;
   }
   #header .inner .nav-pc {
     display: none;

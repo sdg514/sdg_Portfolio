@@ -37,6 +37,10 @@ body {
     border: 0;
 }
 
+.m-br{
+    display: none;
+}
+
 // header
 header {
     position: absolute;
@@ -390,9 +394,9 @@ main {
     text-align: center;
 }
 
-
-
+// 위로가기 버튼
 #onTop {
+    display: none;
     position: fixed;
     right: 4rem;
     bottom: 4rem;
@@ -439,7 +443,9 @@ main {
     html {
         font-size: 50%;
     }
-
+    .m-br{
+        display: block;
+    }
     #header {
         .inner {
             .nav-pc {

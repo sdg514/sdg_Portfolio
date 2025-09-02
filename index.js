@@ -59,7 +59,7 @@ AOS.init();
 const topBtn = document.getElementById("onTop");
 
 window.addEventListener("scroll", () => {
-    if (window.scrollY > 300) {
+    if (window.scrollY > 900) {
         topBtn.style.display = "block";
     } else {
         topBtn.style.display = "none";
