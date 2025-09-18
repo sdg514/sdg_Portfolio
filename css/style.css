@@ -708,6 +708,9 @@ main .section h2 strong {
   #about .about-me {
     flex-direction: column;
   }
+  #skills .skills_img ul {
+    gap: 5rem;
+  }
 }
 @media (max-width: 480px) {
   html {
@@ -780,7 +783,7 @@ main .section h2 strong {
     margin-top: 2rem;
     padding-left: 0;
   }
-  #skills ul li {
+  #skills .skill_about li {
     flex-wrap: wrap;
   }
 }

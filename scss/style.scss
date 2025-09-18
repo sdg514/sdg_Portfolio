@@ -468,6 +468,14 @@ main {
             flex-direction: column;
         }
     }
+
+    #skills{
+        .skills_img{
+            ul{
+                gap: 5rem;
+            }
+        }
+    }
 }
 
 @media (max-width: 480px) {
@@ -554,9 +562,6 @@ main {
         }
     }
 
-
-    // #about .about-me > div:nth-child(2)
-
     #about{
         .about-me{
             >div:nth-child(2){
@@ -568,7 +573,7 @@ main {
 
     // skill
     #skills {
-        ul {
+        .skill_about {
             li {
                 flex-wrap: wrap;
             }
