@@ -708,6 +708,10 @@ main .section h2 strong {
   #about .about-me {
     flex-direction: column;
   }
+  #about .about-me > div:nth-child(2) {
+    padding-left: 0;
+    padding-top: 1rem;
+  }
   #skills .skills_img ul {
     gap: 5rem;
   }
