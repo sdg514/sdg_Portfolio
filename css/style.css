@@ -593,7 +593,7 @@ main .section h2 strong {
   transform: scaleX(1);
 }
 
-#skills ul {
+#skills .skill_about {
   font-size: 1.8rem;
   width: 100%;
   height: auto;
@@ -601,14 +601,41 @@ main .section h2 strong {
   border-radius: 2rem;
   padding: 3rem;
 }
-#skills ul li {
+#skills .skill_about li {
   display: flex;
   align-items: center;
   gap: 2rem;
   margin: 5rem 0;
 }
-#skills ul li img {
+#skills .skill_about li img {
   width: 7.5rem;
+}
+@keyframes slide {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(calc(0% + 0.3rem));
+  }
+}
+#skills .skills_img {
+  width: 100%;
+  overflow: hidden;
+}
+#skills .skills_img ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10rem 0;
+  gap: 15rem;
+  animation: slide 20s linear infinite;
+}
+#skills .skills_img ul img {
+  width: 12rem;
+}
+#skills .skills_img ul img:hover {
+  transform: scale(1.2);
+  transition: all 1s;
 }
 
 #contact .inner {

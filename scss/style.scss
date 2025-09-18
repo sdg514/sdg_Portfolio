@@ -325,7 +325,7 @@ main {
 
 // 4번째 화면
 #skills {
-    ul {
+    .skill_about {
         font-size: 1.8rem;
         width: 100%;
         height: auto;
@@ -344,6 +344,35 @@ main {
             }
         }
 
+    }
+
+    @keyframes slide{
+        0%{
+            transform: translateX(-100%);
+        }
+        100%{
+            transform: translateX(calc(0% + 0.3rem));
+        }
+    }
+
+    .skills_img{
+        width: 100%;
+        overflow: hidden;
+        ul{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            padding: 10rem 0;
+            gap: 15rem;
+            animation: slide 20s linear infinite;
+            img{
+                width: 12rem;
+                &:hover{
+                    transform: scale(1.2);
+                    transition: all 1s;
+                }
+            }
+        }
     }
 }
 
