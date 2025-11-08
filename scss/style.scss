@@ -257,7 +257,7 @@ main {
     .project-list {
         padding-top: 2rem;
         display: grid;
-        grid-template-columns: repeat(auto-fi t, minmax(35rem, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
         gap: 2rem;
 
         .project-card {
